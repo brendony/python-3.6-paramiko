@@ -16,4 +16,4 @@ RUN apk add --virtual .install_dependencies_paramiko \
 &&  pip install paramiko \
 &&  apk del .install_dependencies_paramiko
 
-ENTRYPOINT ["/bin/sh"]
+CMD python3
